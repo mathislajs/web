@@ -27,15 +27,9 @@ if (typeof window !== 'undefined') {
   };
 }
 
-const StatsfmSans = localFont({
-  variable: '--font-statsfm-sans',
-  src: [
-    { path: './fonts/StatsfmSans-Thin.ttf', weight: '100' },
-    { path: './fonts/StatsfmSans-Light.ttf', weight: '300' },
-    { path: './fonts/StatsfmSans-Regular.ttf', weight: '400' },
-    { path: './fonts/StatsfmSans-Medium.ttf', weight: '500' },
-    { path: './fonts/StatsfmSans-Bold.ttf', weight: '700' },
-  ],
+const Satoshi = localFont({
+  variable: '--font-satoshi',
+  src: [{ path: './fonts/Satoshi-Variable.woff2' }],
 });
 
 const Ogp = () => (
@@ -72,7 +66,7 @@ const App = ({ Component, pageProps }: AppProps<{ user?: UserPrivate }>) => {
   ].includes(router.pathname);
 
   return (
-    <main className={clsx(StatsfmSans.variable, 'font-body')}>
+    <main className={clsx(Satoshi.variable, 'font-body')}>
       <AuthProvider user={pageProps.user}>
         <Head>
           <title>stats.fm</title>

@@ -1,5 +1,6 @@
 /* eslint-disable global-require */
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -26,8 +27,8 @@ module.exports = {
         'text-grey': '#727272',
       },
       fontFamily: {
-        body: ['var(--font-statsfm-sans)', 'Statsfm Sans'],
-        heading: ['var(--font-statsfm-sans)', 'Statsfm Sans'],
+        body: ['var(--font-satoshi)', 'Satoshi'],
+        heading: ['var(--font-satoshi)', 'Satoshi'],
       },
       keyframes: {
         fade: {
